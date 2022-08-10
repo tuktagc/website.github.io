@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>yaraam</title>
+	<style type="text/css">
+		* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+	--var1: "Web Developer";
+	--var2: "System Developer";
+}
+
+h2 {
+	color: white;
+	font-family: sans-serif;
+	padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.wrapper2 {
+	width: 100%;
+ 	height: 100%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.wrapper {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.wrapper h1.glitch {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 800;
+  position: relative;
+  font-size: 100px;
+  padding: 30px;
+}
+
+.wrapper h1.glitch::before, .wrapper h1.glitch::after {
+  padding: 30px;
+  color: white;
+  content: var(--var1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  top: 0;
+}
+.wrapper h1.glitch::before {
+  left: 3px;
+  text-shadow: -2px 0 red;
+  animation-name: glitch-animation-1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+.wrapper h1.glitch::after {
+  left: -3px;
+  text-shadow: -2px 0 blue;
+  animation-name: glitch-animation-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+
+@keyframes glitch-animation-1 {
+  0% {
+    clip: rect(14px, 750px, 2px, 30px);
+  }
+  5% {
+    clip: rect(57px, 750px, 122px, 30px);
+  }
+  10% {
+    clip: rect(132px, 750px, 29px, 30px);
+  }
+  15% {
+    clip: rect(4px, 750px, 58px, 30px);
+  }
+  20% {
+    clip: rect(83px, 750px, 120px, 30px);
+  }
+  25% {
+    clip: rect(52px, 750px, 37px, 30px);
+  }
+  30% {
+    clip: rect(102px, 750px, 141px, 30px);
+  }
+  35% {
+    clip: rect(129px, 750px, 84px, 30px);
+  }
+  40% {
+    clip: rect(148px, 750px, 3px, 30px);
+  }
+  45% {
+    clip: rect(86px, 750px, 22px, 30px);
+  }
+  50% {
+    clip: rect(93px, 750px, 132px, 30px);
+  }
+  55% {
+    clip: rect(83px, 750px, 101px, 30px);
+  }
+  60% {
+    clip: rect(36px, 750px, 30px, 30px);
+  }
+  65% {
+    clip: rect(22px, 750px, 55px, 30px);
+  }
+  70% {
+    clip: rect(79px, 750px, 97px, 30px);
+  }
+  75% {
+    clip: rect(2px, 750px, 5px, 30px);
+  }
+  80% {
+    clip: rect(149px, 750px, 98px, 30px);
+  }
+  85% {
+    clip: rect(29px, 750px, 134px, 30px);
+  }
+  90% {
+    clip: rect(102px, 750px, 110px, 30px);
+  }
+  95% {
+    clip: rect(81px, 750px, 131px, 30px);
+  }
+  100% {
+    clip: rect(78px, 750px, 103px, 30px);
+  }
+}
+@keyframes glitch-animation-2 {
+  0% {
+    clip: rect(91px, 750px, 115px, 30px);
+  }
+  5% {
+    clip: rect(5px, 750px, 40px, 30px);
+  }
+  10% {
+    clip: rect(31px, 750px, 92px, 30px);
+  }
+  15% {
+    clip: rect(109px, 750px, 19px, 30px);
+  }
+  20% {
+    clip: rect(150px, 750px, 30px, 30px);
+  }
+  25% {
+    clip: rect(75px, 750px, 127px, 30px);
+  }
+  30% {
+    clip: rect(125px, 750px, 36px, 30px);
+  }
+  35% {
+    clip: rect(60px, 750px, 31px, 30px);
+  }
+  40% {
+    clip: rect(47px, 750px, 131px, 30px);
+  }
+  45% {
+    clip: rect(111px, 750px, 100px, 30px);
+  }
+  50% {
+    clip: rect(140px, 750px, 141px, 30px);
+  }
+  55% {
+    clip: rect(134px, 750px, 3px, 30px);
+  }
+  60% {
+    clip: rect(81px, 750px, 89px, 30px);
+  }
+  65% {
+    clip: rect(65px, 750px, 100px, 30px);
+  }
+  70% {
+    clip: rect(36px, 750px, 80px, 30px);
+  }
+  75% {
+    clip: rect(21px, 750px, 46px, 30px);
+  }
+  80% {
+    clip: rect(90px, 750px, 138px, 30px);
+  }
+  85% {
+    clip: rect(102px, 750px, 101px, 30px);
+  }
+  90% {
+    clip: rect(22px, 750px, 108px, 30px);
+  }
+  95% {
+    clip: rect(94px, 750px, 42px, 30px);
+  }
+  100% {
+    clip: rect(86px, 750px, 78px, 30px);
+  }
+}
+	</style>
+</head>
+<body>
+	<div class="wrapper2">
+	<div class="wrapper">
+	<h2># Hi There! I'm Cetin</h1>
+ 	<h1 class="glitch">Web Developer</h1>
+ 	</div>
+ 	</div>
+</div>
+<div>
+	<!----------
+	attritube vec4 a_position;
+
+	void main() {
+	gl_Position = a_position;
+
+}
+
+var positionBuffer = [
+	0,0,0,0,
+	0,0.5,0,0,
+	0.7,0,0,0
+];
+var attributes = {};
+var gl_position;
+
+drawArrays(..., offset, count) {
+	var stride = 4;
+	var size = 4;
+	for (var i = 0; i < count; i++) {
+		const start = offset + i * stiride;
+		attributes.a_position = positionBuffer.slice(start, start + size);
+		...
+		doSomethingWith_gl();
+}
+}
+------------>
+
+<canvas id="c"></canvas>
+<script type="text/javascript">
+	var canvas = document.querySelector("#c");
+	var gl = canvas.getContext("webgl");
+	if (!gl) {
+		//yarraam
+	}
+</script>
+<script id="vertex-shader-2d" type="notjs">
+	
+	attribute vec4 a_position;
+
+	void main() {
+	gl_Position = a_position;
+}
+
+</script>
+
+<script id="fragment-shader-2d" type="notjs">
+	precision mediump float;
+
+	void main() {
+	gl_FragColor = vec4(1, 0, 0.5, 1)
+}
+</script>
+
+<script type="text/javascript">
+	function createShader(gl, type, source) {
+		var shader = gl.createShader(type);
+		gl.shaderSource(shader, source);
+		gl.compileShader(shader);
+		var success gl.getShadeParameter(shader, gl.COMPILE_STATUS);
+		if (success) {
+			return shader;
+		}
+
+		console.log(gl.getShaderInfoLog(shader));
+		gl.deleteShader(shader);
+	}
+
+	var vertexShaderSource = document.querySelector("#vertex-shader-2d").text;
+	var fragmentShaderSource = document.querySelector("#fragment-shader-2d").text;
+
+	var vertexShader = createShader(gl, gl.VERTEX_SHADER, vertexShaderSource);
+	var fragmentShader = createShader(gl, gl.FRGMENT_SHADER, fragmentShaderSource);
+
+	function createProgram(gl, vertexShader, fragmentShader) {
+		var program = gl.createProgram();
+		gl.attachShader(program, vertexShader);
+		gl.attachShader(program, fragmentShader);
+		gl.linkProgram(program);
+		var success = gl.getProgramParameter(program, gl.LINK_STATUS);
+		if (success) {
+			return program;
+		}
+
+		console.log(gl.getProgramInfoLog(program));
+		gl.deleteProgram(program)
+
+	}
+
+	var program = createProgram(gl, veretxShader, fragmentShader);
+
+	var positionAttributeLocation = gl.getAttribLocation(program, "a_position");
+
+	var positionBuffer = gl.createBuffer();
+
+	gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+
+	var position = [
+		0,0,
+		0, 0.5,
+		0.7, 0
+	];
+	gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(position), gl.STATIC_DRAW);
+
+
+	webglUtils.resizeCanvasToDisplaySize(gl.canvas);
+
+	gl.viewport(0,0, glcanvas.with, gl.canvas.height);
+	gl.clearColor(0,0,0,0);
+	gl.clear(gl.COLOR_BUFFER_BIT);
+
+	gl.useProgram(program);
+
+	gl.enableVertexAttribuArray(positionAttributeLocation);
+
+	gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+
+	var size = 2;
+	var type = gl.FLOAT;
+	var normalize = false;
+	var stride = 0;
+	var offset = 0;
+
+	gel.vertexAttribPointer(positionAttributeLocation, size, type, normalize, stride, offset)
+
+	attribute vec4 a_position;
+
+	var primitiveType = gl.TRIANGLES;
+	var offset = 0;
+	var count = 3;
+	gl.drawArrays(primitiveType, offset, count);
+	
+
+</script>
+
+
+</div>
+</body>
+</html>
